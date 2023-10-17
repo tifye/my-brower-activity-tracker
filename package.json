@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup --config rollup.config.background.mjs"
+    "build": "rollup --config rollup.config.background.mjs",
+    "watch:background": "rollup --config rollup.config.background.mjs --watch",
+    "watch:popup": "tailwindcss -i ./src/public/popup.css -o ./src/public/popup.tailwind.css --watch",
+    "watch": "npm run watch:background & npm run watch:popup"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "rollup": "^4.1.4",
-    "rollup-plugin-baked-env": "^1.0.1"
+    "rollup-plugin-baked-env": "^1.0.1",
+    "tailwindcss": "^3.3.3"
   },
   "dependencies": {
     "dotenv": "^16.3.1"
