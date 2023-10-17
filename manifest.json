@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "My Browser Activity",
+  "version": "1.0.0",
+
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+
+  "background": {
+    "scripts": ["dist/index.js"],
+    "type": "module"
+  }
+}
