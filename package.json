@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup --config rollup.config.background.mjs",
+    "build:background": "rollup --config rollup.config.background.mjs",
+    "build:popup": "tailwindcss -i ./src/popup/public/popup.css -o ./src/popup/public/popup.tailwind.css && rollup --config rollup.config.popup.mjs",
     "watch:background": "rollup --config rollup.config.background.mjs --watch",
-    "watch:popup": "tailwindcss -i ./src/public/popup.css -o ./src/public/popup.tailwind.css --watch",
+    "watch:popup": "tailwindcss -i ./src/popup/public/popup.css -o ./src/popup/public/popup.tailwind.css --watch",
     "watch": "npm run watch:background & npm run watch:popup"
   },
   "keywords": [],

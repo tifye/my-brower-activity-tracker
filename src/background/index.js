@@ -1,4 +1,5 @@
-import { TARGET_BACKEND } from 'process.env';
+import { TARGET_BACKEND } from 'process.env'
+import { postActivity } from '../common/activity.js'
 
 const urls = ["*://*.youtube.com/*"]
 const trackingTabs = new Set()
@@ -83,10 +84,4 @@ function getVideoIdFromUrl(url) {
   }
 
   return [id, null]
-}
-
-async function postActivity(videoId) {
-  await fetch(`${TARGET_BACKEND}/youtube/activity/${videoId}`, {
-    method: 'post',
-  })
 }

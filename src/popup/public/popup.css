@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.thumbnail {
+  --thumbnail-url: 'url()';
+  background-image: var(--thumbnail-url);
+  background-size: cover;
+  background-position: center;
+}

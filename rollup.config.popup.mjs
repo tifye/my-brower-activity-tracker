@@ -2,9 +2,9 @@ import bakedEnv from 'rollup-plugin-baked-env';
 import 'dotenv/config';
 
 export default {
-  input: 'src/background/index.js',
+  input: 'src/popup/public/pupup.js',
   output: {
-    file: 'dist/background.js',
+    file: 'dist/popup.js',
     format: 'esm'
   },
   plugins: [
