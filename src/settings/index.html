@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body class="bg-stone-200 px-8 py-6 font-sans text-indigo-950">
+    <form class="flex flex-col gap-6">
+        <div class="group relative">
+            <div class="bg-stone-100 shadow-md w-full rounded-sm px-2 pb-2 outline-none text-indigo-950">
+                <label for="token" class="block text-sm">API Token</label>
+                <input type="text" id="token" name="token" class="outline-none w-full" />
+            </div>
+            <div
+                class="w-2 absolute right-full top-0 mr-2 h-full rounded-full bg-indigo-500 group-focus-within:bg-amber-500 group-focus-within:scale-y-110 transition-all">
+            </div>
+        </div>
+        <div class="group relative">
+            <div class="bg-stone-100 shadow-md w-full rounded-sm px-2 pb-2 outline-none text-indigo-950">
+                <label for="backend" class="block text-sm">Backend</label>
+                <input type="text" id="backend" name="backend" class="outline-none w-full" />
+            </div>
+            <div
+                class="w-2 absolute right-full top-0 mr-2 h-full rounded-full bg-indigo-500 group-focus-within:bg-amber-500 group-focus-within:scale-y-110 transition-all">
+            </div>
+        </div>
+        <button type="submit" class="group bg-stone-100 relative shadow-md max-w-40 px-4 py-2 rounded-sm">
+            Save
+            <div
+                class="w-full h-2 bg-amber-500 absolute top-full mt-2 left-0 rounded-full group-focus-within:scale-x-110 group-hover:opacity-100 opacity-0 transition-all select-none">
+            </div>
+        </button>
+    </form>
+</body>
+
+</html>
